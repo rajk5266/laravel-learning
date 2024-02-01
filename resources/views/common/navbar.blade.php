@@ -10,6 +10,9 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/add">Add</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/list">List</a>
         </li>
         <li class="nav-item dropdown">
