@@ -39,7 +39,10 @@ echo $variable;
                 <td>{{$item -> phone}}</td>
                 <td>{{$item -> email}}</td>
                 <td>{{$item -> address}}</td>
-                <td><a href="delete/{{$item -> id}}"><i class="fa fa-trash"></i></a></td>
+                <td>
+                    <a href="delete/{{$item -> id}}"><i class="fa fa-trash"></i></a>
+                    <a href="edit/{{$item -> id}}"><i class="fa fa-pencil-square-o"></i></a>
+                </td>
             </tr>
             @endforeach
         </tbody>
