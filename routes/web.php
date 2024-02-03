@@ -26,4 +26,7 @@ Route::get('/list', [RestoController::class, 'list']);
 
 
 Route::post('/add', [RestoController::class, 'add']);
+
 Route::view('add', 'add');
+
+Route::get('/delete/{id}', [RestoController::class, 'delete']);

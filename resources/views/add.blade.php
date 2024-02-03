@@ -22,6 +22,10 @@
             <label >Phone</label>
             <input type="text" name="phone" class="form-control" placeholder="Enter Phone">
         </div>
+        <div class="form-group">
+            <label >Adress</label>
+            <input type="text" name="address" class="form-control" placeholder="Enter Address">
+        </div>
       
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
