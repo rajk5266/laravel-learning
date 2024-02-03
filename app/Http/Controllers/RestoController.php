@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
+use App\Models\User;
+
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Crypt as FacadesCrypt;
 use PhpParser\Node\Stmt\TryCatch;
 
 class RestoController extends Controller
@@ -83,5 +86,11 @@ class RestoController extends Controller
         } catch (\Exception $e) {
             return response()->json(['error' => 'An error occurred while processing your request.'], 500);
         }
+    }
+
+    public function register(Request $req){
+    //  return $req->input();
+
+    echo FacadesCrypt::encrypt('123@abc');
     }
 }
